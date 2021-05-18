@@ -1,0 +1,11 @@
+version: "3"
+services:
+  lumen-wallet:
+    container_name: lumen-wallet
+    build:
+      context: .
+    image: alexandre/php
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/var/www/html
